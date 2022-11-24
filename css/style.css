@@ -1,0 +1,767 @@
+/*Global*/
+
+*
+ {
+    box-sizing: border-box; 
+ }
+
+ html 
+ {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+ }   
+
+body
+{
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.8rem;
+      line-height: 2;
+      margin: 0;
+      color: black;
+}
+
+img
+{
+      max-width: 100%;
+      height: auto;
+      object-fit:cover;
+}
+
+a
+{
+      color: black;
+      text-decoration: none;
+}
+
+h1, h2, h3 
+{
+      font-weight: 700;
+}
+
+i
+{
+      color: #0065FC;
+}
+
+label
+{
+      position: absolute; left:-999px;
+}  
+
+ul 
+{
+      list-style-type: none;
+      padding: 0;
+}
+
+/*Global*/
+
+.container
+{
+      max-width: 1450px;
+      margin: 0 auto;        
+      padding: 0 15px;
+}
+
+header
+{
+      display: flex;
+      flex-direction: column;
+}     
+      
+.topbar
+{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 25px;
+      max-width: 1450px;
+      margin: 0 auto;
+      padding: 24px 25px;
+}      
+
+.topbar nav a
+{
+      padding: 25px;
+}   
+            
+h1
+{
+      margin: 0;
+      line-height: 1.3;
+      margin: 5px 0px;
+}
+
+.title
+{
+      padding: 40px 0 20px 0;
+      margin: 10px 0;
+}
+
+.topbar nav a:hover
+{
+     box-shadow: 0px -3px 0px 0px #0065FC;
+}
+
+#place
+{
+      padding: 17px;
+      border-radius: 10px 0 0 10px;
+      background-color: #F2F2F2;
+      color: black;
+      border: solid #F2F2F2 2px ;
+      position: relative;
+      margin-left: 1px;
+}
+
+form
+{
+      display:flex;
+}  
+
+#search
+{
+      width: 20%;
+      border: solid #F2F2F2 2px;
+      font-size: 21px;
+      padding-left: 8px;
+}
+      
+form button
+{
+      color: white;
+      background-color: #0065FC;
+      border-radius: 0 10px 10px 0;
+      transition-duration: 0.4s;     
+      border: none;
+      padding: 0px 14px;
+      font-weight: 700;
+}
+
+form button:nth-of-type(2)
+{
+      display: none;
+}
+
+button:hover
+{
+      background-color: blue;
+      cursor: pointer;    
+      border-radius: 0 5px 5px 0;     
+}
+
+.filtres
+{
+      display: flex; 
+      justify-content: left;
+      align-items: center;
+      padding-top: 33px;
+}
+
+.filtres i
+{
+      padding: 15px;
+      background-color: #DEEBFF;
+      border-radius: 50%;
+}
+
+.filtres span
+{
+      padding:8px;
+}           
+
+.filtres a
+{        
+      background-color: white;
+      color: black;      
+      font-weight:700;   
+      border-radius:  50px;             
+      border: solid 2px #F2F2F2; 
+      transition-duration: 00.4s;  
+}   
+
+.filtres a, strong
+{
+      margin-right: 20px;
+}
+                        
+.filtres a:hover
+{
+      background-color: #DEEBFF;
+}                          
+
+.fa-circle-info
+{
+      padding-right: 5px;    
+}
+
+header p
+{
+      margin-bottom: 36px;
+}
+main
+{ 
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-between;     
+} 
+
+article 
+{
+      padding: 5px;
+}
+
+.greystar
+{
+      color: lightgray;
+}
+
+#hebergement
+{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;          
+      background-color: #F2F2F2;
+      border-radius: 20px;
+      width: 63%;
+      padding: 14px;    
+      line-height: 1;      
+}
+
+.detail
+{
+      padding-left: 14px;
+}
+
+.detail h3, .detail p 
+{
+      margin: 10px 0;
+}
+
+#hebergement a
+{
+      margin-bottom: 25px;
+      border-radius: 28px;
+}
+
+
+#hebergement a:not(#afficher)
+{ 
+      background-color: white;
+      width:31%;          
+}   
+        
+#hebergement img
+{
+      border-radius: 30px 30px 0 0;
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      object-position: 0 +60%;
+}        
+
+h2
+{
+      width:100%;
+      font-size: 26px;
+}
+
+#plus
+{
+      width: 100%;
+      font-weight: 700;
+      padding-top: 15px;
+}   
+
+#afficher:hover
+{
+       color: #0065FC;
+}
+
+#populaires
+{
+      display: flex;
+      flex-direction: column;
+      background-color: #F2F2F2;           
+      border-radius: 25px;   
+      line-height: 1;  
+      width: 34%;     
+      padding: 15px;            
+}     
+
+#populaires article
+{
+      display: flex;
+      background-color: white;
+      border-radius: 19px;  
+      padding-left: 1px;   
+}         
+
+#populaires a
+{
+      margin: 10px 0px;   
+}
+
+#populaires img
+{
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+      height: 100%;
+      object-fit: cover;
+      object-position: +40% 0%;
+      padding-left: 4px;
+}
+
+#populaires .populaires_pict
+{
+      width: 50%; 
+}
+
+.pop
+{        
+      padding-left: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+}
+
+.pop div p
+{
+      margin-top: 12px;
+}
+
+.pop div h3
+{
+      margin-bottom: 0;
+}
+
+h2 i
+{
+      color: black;
+}                 
+
+#populaires h2
+{
+      display: flex;
+      justify-content: space-between;
+}    
+
+#activites
+{
+      display:flex;
+      justify-content: space-between;
+      flex-wrap: wrap;  
+      padding-bottom: 50px;
+      width: 100%;
+}
+
+#activites div:nth-of-type(even)
+{
+      display: flex;
+      flex-direction: column;   
+      justify-content: space-between;  
+}
+
+#activites img
+{
+      border-radius: 12px 12px 0 0;
+}
+
+#activites article
+{
+      border: solid 2px #F2F2F2;
+      border-radius: 15px;
+      box-shadow: 7px 7px 7px #F2F2F2;
+      padding: 0;
+      height: 100%;
+}   
+
+#activites h3
+{
+      padding: 5px;
+      margin: 0%;
+      font-size: 17px;
+}
+
+#activites div
+{
+      width: 23%;
+      height: 562px;
+}
+
+#activites div:nth-of-type(odd) a img /* Vieux Port et Parc des Calanques*/
+{
+     width: 100%;
+     height: 80%;
+}
+
+#activites div:nth-of-type(2) a:first-of-type img:nth-of-type(1) /*Fort de Pomègues*/
+{
+      width: 100%;
+      height: 210px; 
+      object-fit: cover; 
+      
+}
+
+#activites div:nth-of-type(2) a:nth-of-type(2) img, /*Frioul*/#activites div:nth-of-type(4) a:nth-of-type(1) img /*Notre-Dame-De-La-Garde*/
+{
+    width: 100%;
+     height: 180px; 
+     object-fit: cover; 
+     
+}
+
+#activites div:nth-of-type(4) a:nth-of-type(2) img /*Parc Longchamp*/
+{
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+}
+
+footer
+{
+       background-color: #F2F2F2; 
+}     
+
+footer .container
+{
+      display: flex;
+      justify-content:left;                
+}
+
+footer ul
+{
+      padding-right: 112px;
+}
+
+.navfooter
+{
+      font-size: 26px;
+      font-weight: 700;
+}
+
+/*Media queries*/
+
+@media all and (max-width: 992px) 
+{
+
+      main
+      {
+            flex-direction: column;  
+      }
+
+      #hebergement
+      {
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 0%;
+      }    
+
+      #populaires
+      {
+            border-radius: 0%;
+            width: 100%;
+      }    
+      
+      #activites div:nth-of-type(4) a:nth-of-type(1), /*Notre-Dame-De-La-Garde*/#activites div:nth-of-type(2) a:first-of-type  /*Fort de Pomègues*/
+      {
+            margin-bottom: 15px;
+      }
+      
+
+      .topbar
+      {
+            flex-direction: column;
+            padding: 8px 0;
+      }
+
+      .topbar nav
+      {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: solid 4px #DEEBFF;              
+      } 
+
+      .topbar nav a:hover
+      {
+            box-shadow: 0px +4px 0px 0px #0065FC;
+      }  
+
+      .topbar a  
+      {
+            display: flex;
+            justify-content: center;
+            padding: 19px 0;
+      }   
+
+      .topbar nav a
+      {
+            width: 50%;
+            font-size: 30px;
+      }
+      
+      form
+      {
+            justify-content: center;
+            font-size: 200%;      
+      }
+
+      form #search
+      {
+            width: 100%;
+      }
+
+      form button:nth-of-type(1)
+      {
+            display: none;
+      }
+
+      form button:nth-of-type(2)
+      {
+            display:inline;
+            padding: 30px;
+            border-radius: 20px;
+            position: relative;
+            margin-left: -20px;
+      }
+
+      .fa-magnifying-glass
+      {
+            color: white;
+      }
+
+      form button:nth-of-type(2):hover 
+      {
+            border-radius: 20%;    
+      }
+
+      .filtres 
+      {                
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content:left;
+      }
+
+      .filtres strong
+      {
+            width: 100%;
+      }         
+      
+      .filtres a
+      {
+            font-size: 18px;
+            margin: 10px 5px;
+      }
+
+      .filtres strong
+      {
+            font-size: 30px;
+      }
+
+      .filtres i
+      {
+            padding: 22px;
+      }
+
+      #populaires
+      {
+            border-radius: 0%;
+            width: 100%;
+            padding: 10px 50px;
+      }   
+
+      #populaires a
+      {
+            margin: 10px 0px;
+      }
+      
+      #populaires h2
+      {
+            justify-content: space-between;
+            width: 100%;
+      }
+      
+      #activites a
+      {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+      }
+
+
+      #activites div:first-of-type a img, /*Vieux Port*/#activites div:nth-of-type(3) a img, /*Parc des Calanques*/#activites div:nth-of-type(2) a:first-of-type img:nth-of-type(1), /*Fort de Pomègues*/
+      #activites div:nth-of-type(2) a:nth-of-type(2) img, /*Frioul*/#activites div:nth-of-type(4) a:nth-of-type(1) img, /*Notre-Dame-De-La-Garde*/#activites div:nth-of-type(4) a:nth-of-type(2) img /*Parc Longchamp*/
+{
+      width: 100%;
+      
+}
+
+      footer ul
+      {
+            padding-right: 40px;
+      }
+       
+}
+   
+@media all and (max-width: 768px) 
+      
+{
+
+      header
+      {       
+            padding: 25px;
+      }
+
+     .container 
+      {
+            padding: 0;
+      }
+
+      .topbar nav a
+      {
+            font-size: 23px;
+      }
+
+      .filtres a
+      {
+            font-size: 14px;
+      }
+
+      .filtres a:nth-of-type(2) i
+      {
+            padding:24px;
+      }
+
+      #hebergement h2
+      {
+            width: 100%;
+      }
+
+      #hebergement
+      {
+            order: 2;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            padding: 10px 50px;
+            margin-bottom: 0px;
+      }
+
+      #hebergement a:not(#afficher)
+      {
+            width: 100%;
+            border: solid 2px #F2F2F2;
+            box-shadow: 8px 8px 8px #F2F2F2;
+      }
+
+      #hebergement img
+      {
+            border-radius: 22px 22px 0 0;
+            width: 100%;
+            height:200px;
+      }
+
+      #plus
+      {
+            padding-top: 35px;
+            
+      }
+
+      #populaires
+      {
+            order: 1;
+            border-radius: 0%;
+            padding: 8px 34px;
+      }
+
+      #populaires a
+      {
+            margin: 10px 0px;
+      }
+
+      #populaires img
+      {
+            height: 200px;
+            object-position: 30%;
+      }
+
+      #populaires .star
+      {
+            padding-top:10px;
+      }
+
+      #activites h2
+      {
+            width: 100%;
+            margin-bottom: 40px;
+      }
+
+      #activites
+      {
+            order: 3;
+            padding: 10px 50px;
+            margin-bottom: 40px;
+            flex-direction: column;
+      }
+
+      #activites a
+      {
+            margin-bottom: 25px;
+      }
+
+      #activites div:nth-of-type(odd), #activites div:nth-of-type(even)
+      {
+            width: 100%;
+            height: auto;
+      }
+
+      #activites div:first-of-type a img /*Vieux Port*/
+      {
+            object-position: 0% 72%;
+            height: 290px;
+      }
+
+      #activites div:nth-of-type(2) a:first-of-type img:nth-of-type(1) /*Fort de Pomègues*/
+      {
+            object-position: 0% +35%;
+            height: 240px;
+      
+      }
+
+      #activites div:nth-of-type(2) a:nth-of-type(2) img /*Frioul*/
+      {
+            object-position: 0% 40%;
+            height: 245px;
+      }
+
+      #activites div:nth-of-type(3) a img
+      {
+            height: 280px;
+            object-position: 0 52%;
+      }
+
+      #activites div:nth-of-type(4) a:nth-of-type(1) img /*Notre-Dame-De-La-Garde*/
+      {
+           object-position: 0% +30%;
+           height: 240px;
+      }
+      
+      #activites div:nth-of-type(4) a:nth-of-type(2) img /*Parc Longchamp*/
+      {
+            height: 300px;
+      }
+
+      footer .container
+      {   
+            flex-direction: column;
+            align-items: baseline;
+            padding: 0px 58px;
+      }
+
+      footer
+      {
+            padding-bottom: 30px;
+      }
+     
+}
