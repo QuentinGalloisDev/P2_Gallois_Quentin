@@ -69,7 +69,7 @@ Assurez-vous d'avoir un éditeur de texte (comme Visual Studio Code) et un navig
    git clone https://github.com/QuentinGalloisDev/P2_Gallois_Quentin.git
     ```
 2. Ouvrez le fichier `index.html` dans votre navigateur pour voir le site en local.
-3. Vous pouvez également avoir un apercç de ce projet hébergé sur git sur ce lien : 
+3. Vous pouvez également avoir un apercç de ce projet hébergé sur git sur ce lien : https://quentingalloisdev.github.io/P2_Gallois_Quentin/
 
 ## Utilisation
 
